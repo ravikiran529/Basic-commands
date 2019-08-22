@@ -1,0 +1,46 @@
+Git basic commands:
+
+1) git init <directory> ==  Create empty Git repo in specified directory. initializes the current directory as a git repository
+
+2) git clone <repo> ==  To clone a rpository(remote)
+
+3) git config user.name <name> == Define author name to be used for all commits in current repo.
+
+4) git add <directory/file> == To add a file/dir to staging area
+
+5) git commit -m "<message>" ==  To add file(s) to local repository
+
+6) git status == List which files are staged, unstaged, and untracked.
+
+7) git log == Display the entire commit history using the default format.
+
+8) git diff == Show unstaged changes between your index and working directory.
+
+9) git revert <commit> == Create new commit that undoes all of the changes made in <commit>,
+                          then apply it to the current branch.
+                          
+10) git reset <file> == Remove <file> from the staging area, but leave the working directory
+                        unchanged. This unstages a file without overwriting any changes.
+                        
+11) git clean -n/-f ==  n--> Shows which files would be removed from working directory
+                        f --> to execute clean operation 
+
+12) git config --global user.name <name> == Define the author name to be used for all commits by the current user.
+
+13) git config --globaluser.email <email> == Define the author email to be used for all commits by the current user.
+ 
+14) git config --global alias. <alias-name> <git-command> == Create shortcut for a Git command. E.g. alias.glog log --graph --oneline will set git glog equivalent to git log --graph --oneline.
+
+
+15) git config --global --edit == Open the global configuration file in a text editor for manual editing.
+
+
+16)
+
+17)
+
+18)
+
+19)
+
+20)
