@@ -1,0 +1,22 @@
+Maven commands:
+
+mvn archetype:generate 
+
+mvn clean
+    /test
+    /package
+    /install
+    /deploy
+    /site
+    
+Maven Life cycles and phases:
+   Life-cycles: 3 types.
+      1) clean
+      2) default
+         --validate
+         --compile
+         --test
+         --package
+         --install
+         --deploy
+      3) site
