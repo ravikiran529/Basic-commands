@@ -40,3 +40,11 @@ Without Inventory:
 			-- ansible centos -m setup -a 'filter=ansible_kernel'
 			-- ansible centos -m setup -a 'filter=ansible_memtotal_mb'
 			-- ansible centos -m setup -a 'filter=ansible_proc*'
+
+
+Working with playbooks:
+-----------------------------
+
+ansible-playbook <playbook_name>  ==  To run a playbook
+
+
