@@ -47,4 +47,8 @@ Working with playbooks:
 
 ansible-playbook <playbook_name>  ==  To run a playbook
 
+Roles:
+----------------------------
+ansible-galaxy install <Author_name.role_name>  == To install a role from galaxy.
+
 
