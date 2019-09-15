@@ -1,0 +1,11 @@
+Docker Commands (Basic to Advanced):
+
+docker info                    --> Description about docker server
+docker ps                      --> running processes(containers)
+docker ps -a                   --> To list all containers including not running.
+docker image ls                --> To list all the images downloaded.
+docker rmi <image_id>          --> To delete an image
+docker image ls -aq            --> To list downloaded images IDs only
+docker container ls            --> To list all running containers
+docker container ls -aq        --> To list all containers available
+docker container rm <hash>     --> To delete container
