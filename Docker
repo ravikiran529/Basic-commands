@@ -1,5 +1,6 @@
 Docker Commands (Basic to Advanced):
 
+service docker start/stop      --> To start/stop docker service 
 docker info                    --> Description about docker server
 docker ps                      --> running processes(containers)
 docker ps -a                   --> To list all containers including not running.
@@ -9,3 +10,17 @@ docker image ls -aq            --> To list downloaded images IDs only
 docker container ls            --> To list all running containers
 docker container ls -aq        --> To list all containers available
 docker container rm <hash>     --> To delete container
+docker history <image_name/
+               image_id>       --> To view the history of an image
+docker top <cont_id>           --> To list the processes of particular container
+docker start/stop <cont_id>    --> To start/stop container
+docker rm <cont_id>            --> To remove/delete container
+docker stats <cont_id>         --> This will show the CPU and Memory utilization of the Container.
+docker attach <cont_id>        --> To get attach/login to container
+docker pause/unpause <cont_id> --> To pause/unpause the processes in the container
+docker kill <cont_id>          --> To kill the processes in the container.
+docker inspect <img_id/cont_id>--> To view complete information in JSON format
+
+
+
+
