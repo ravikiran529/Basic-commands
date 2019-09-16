@@ -20,6 +20,8 @@ docker attach <cont_id>        --> To get attach/login to container
 docker pause/unpause <cont_id> --> To pause/unpause the processes in the container
 docker kill <cont_id>          --> To kill the processes in the container.
 docker inspect <img_id/cont_id>--> To view complete information in JSON format
+nsenter <options> <PID> /bash  --> To attach to a container and exiting it cleanly without destroying
+
 
 
 
