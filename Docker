@@ -21,7 +21,8 @@ docker pause/unpause <cont_id> --> To pause/unpause the processes in the contain
 docker kill <cont_id>          --> To kill the processes in the container.
 docker inspect <img_id/cont_id>--> To view complete information in JSON format
 nsenter <options> <PID> /bash  --> To attach to a container and exiting it cleanly without destroying
-
+docker build  -t 
+  ImgName:TagName <dockerfile_dir> To build image from docker file.If "." it will take from current directory
 
 
 
