@@ -1,8 +1,9 @@
-Docker Commands (Basic to Advanced):
+                                     Docker Commands (Basic to Advanced):
+********************************************************************************************************************************
 
 service docker start/stop      --> To start/stop docker service 
 docker info                    --> Description about docker server
-docker ps                      --> running processes(containers)
+docker ps                      --> running containers
 docker ps -a                   --> To list all containers including not running.
 docker image ls                --> To list all the images downloaded.
 docker rmi <image_id>          --> To delete an image
@@ -20,10 +21,69 @@ docker attach <cont_id>        --> To get attach/login to container
 docker pause/unpause <cont_id> --> To pause/unpause the processes in the container
 docker kill <cont_id>          --> To kill the processes in the container.
 docker inspect <img_id/cont_id>--> To view complete information in JSON format
-nsenter <options> <PID> /bash  --> To attach to a container and exiting it cleanly without destroying
+nsenter <options> <PID> /bash  --> To attach to a container and exiting it cleanly without destroying.
 docker build  -t 
   ImgName:TagName <dockerfile_dir> To build image from docker file.If "." it will take from current directory
+docker commit -t <name> <cont_id>  To create image from a container
+docker tag <tag> <img>         --> To tag an image 
+docker push acc_name/repo_name --> To push an image to hub.
 
 
+Docker-compose:
+============================================================
+
+docker-compose up             --> To Create and start containers (docker-compose.yml should be in the current directory)
+               down           --> To Stop and remove containers, networks, images, and volumes
+               build          --> To build/rebuild service
+               create         --> To create service
+               events         --> To receive real-time events from containers
+               exec           --> To login/execute a command in a container
+               rm             --> To remove the containers
+               start/stop     --> To start/stop containers
+               pause/unpause  --> To pause/unpause the containers
+               top            --> To display the running processes
+               ps             --> To list containers
+               images         --> To list images
+               logs           --> To view the container logs
+               pull/push      --> To pull/push the service images
+               kill           --> To kill the containers
+               scale          --> To set the no.of containers for a service
+               
+               
+               
+               
+Docker swarm:
+============================================================
+
+docker swarm init             --> Initialize a swarm
+             join             --> Join a swarm as a node and/or manager
+             join-token       --> Manage join tokens
+             leave            --> Leave the swarm
+             unlock           --> Unlock swarm
+             unlock-key       --> Manage the unlock key
+             update           --> Update the swarm
+
+
+Docker service:
+===========================================================
+
+docker service create                  --> Create a new service
+              --replicas <No.>
+              --name <name>
+              --update-delay <(n)s> 
+              inspect                  --> Display detailed information on one or more services
+              logs                     --> Fetch the logs of a service or task
+              ls                       --> List services
+              ps                       --> List the tasks of one or more services
+              rm                       --> Remove one or more services
+              rollback                 --> Revert changes to a service's configuration
+              scale                    --> Scale one or multiple replicated services
+              update                   --> Update a service 
+               --update-parallelism <No.> 
+               --update-failure-action
+               
+               
+               
+               
 
 
