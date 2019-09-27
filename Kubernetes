@@ -1,2 +1,13 @@
                                         Kubernetes commands
 **************************************************************************************************************************                                        
+kubectl run <pod_name> --name=<img_name>          --> To create and run a pod (image pulled from docker hub).
+kubectl create -f <example.yml>                   --> To create pod using yml file existing in local system
+kubectl edit pod <pod_name>                       --> To edit pod data
+kubectl scale --replicas=<No.> -f <file.yml>      --> To scale replicas
+kubectl replace -f <file.yml>                     --> To replace/update resouce
+kubectl delete <resource/object> <name>           --> To delete a resource
+kubectl create <resource> <name>                  --> To create a resource (Ex. namespace)
+kubectl get pods --all-namespaces                 --> To list all the pods in all namespaces.
+kubectl config set-context $(kubectl config
+      current-context) --namespace=<name>         --> To set a namespace as default
+   
