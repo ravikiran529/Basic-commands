@@ -40,6 +40,8 @@ Without Inventory:
 			-- ansible centos -m setup -a 'filter=ansible_kernel'
 			-- ansible centos -m setup -a 'filter=ansible_memtotal_mb'
 			-- ansible centos -m setup -a 'filter=ansible_proc*'
+		10 - ansible-doc <module-name>
+		        -- To see all arguments for a specific module, allowed values, and other details.	
 
 
 Working with playbooks:
