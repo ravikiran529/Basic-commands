@@ -5,6 +5,7 @@ Git basic commands:
 2) git clone <repo> ==  To clone a rpository(remote)
 
 3) git config user.name <name> == Define author name to be used for all commits in current repo.
+   git config user.email <name> == Define author email to be used for all commits in current repo.
 
 4) git add <directory/file> == To add a file/dir to staging area
           
