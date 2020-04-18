@@ -37,9 +37,9 @@ Git basic commands:
 
 12) git config --global user.name <name> == Define the author name to be used for all commits by the current user.
 
-13) git config --globaluser.email <email> == Define the author email to be used for all commits by the current user.
+13) git config --global user.email <email> == Define the author email to be used for all commits by the current user.
  
-14) git config --global alias. <alias-name> <git-command> == Create shortcut for a Git command. E.g. alias.glog log --graph --oneline will set git glog equivalent to git log --graph --oneline.
+14) git config --global alias.<alias-name> <git-command> == Create shortcut for a Git command. E.g. alias.glog log --graph --oneline will set git glog equivalent to git log --graph --oneline.
 
 
 15) git config --global --edit == Open the global configuration file in a text editor for manual editing.
