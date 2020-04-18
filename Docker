@@ -26,7 +26,7 @@ docker build  -t
   ImgName:TagName <dockerfile_dir> To build image from docker file.If "." it will take from current directory
 docker commit -t <name> <cont_id>  To create image from a container
 docker tag <tag> <img>         --> To tag an image 
-docker push acc_name/repo_name --> To push an image to hub.
+docker push reg_name/repo_name --> To push an image to hub.
 
 
 Docker-compose:
