@@ -1,4 +1,4 @@
-Chef follows Server-Client architecture. It works on pull based machanism unlike Ansible.
+Chef follows Server-Client architecture. It works on pull based machanism unlike Ansible. It is written in Ruby.
 Below are the commands used to create cookbooks and make the required configuration on chef nodes.
 
 We need to have the chef workstation, Server, Nodes setup before we start writing cookbooks.
@@ -52,3 +52,4 @@ All the work will be done from workstation machine.
     
     
 > Default cookbooks path on node: /var/chef/cache/cookbooks/
+> Templates follows ".erb" extension, it means embedded ruby.
