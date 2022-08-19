@@ -53,3 +53,15 @@ All the work will be done from workstation machine.
     
 > Default cookbooks path on node: /var/chef/cache/cookbooks/
 > Templates follows ".erb" extension, it means embedded ruby.
+
+
+Chef Role:
+==========
+A chef role is a collection of cookbooks that can be applied on nodes.
+To create a role>            knife role create role_name
+To add cookbooks to a role>  knife role edit role_name (Add the cookbooks list)
+
+Once we are done with the abve step, add the role to node runlist
+        knife node edit <node_name>
+        > Add the role as "role[role_name]"
+Finally run the chef-client command on node
