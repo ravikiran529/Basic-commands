@@ -49,6 +49,7 @@ All the work will be done from workstation machine.
 6. Pull the changes from node
     sudo chef-client
     > To avoid manual intervention, this command can be run through cron job on the nodes
+    Ex: */10 * * * * /bin/chef-client -->(Every 10 mins daily)
     
     
 > Default cookbooks path on node: /var/chef/cache/cookbooks/
