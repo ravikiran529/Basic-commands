@@ -5,11 +5,11 @@ We need to have the chef workstation, Server, Nodes setup before we start writin
 All the work will be done from workstation machine.
     
 1. Create a cookbook
-    knife cookcok create file_name (old, deprecated)
-    chef generate cookbook file_name
+    knife cookcok create cbook_name (old, deprecated)
+    chef generate cookbook cbook_name
     ####################################################################
-    > Above command generates a cookbook with below director structure
-        cookbook_name
+    > Above command generates a cookbook with below directory structure
+        cbook_name
           |--Berksfile
           |--chefignore
           |--metadata.rb
@@ -24,7 +24,7 @@ All the work will be done from workstation machine.
           |--test
               |--recipes
                   |--default-test.rb
-     > We need to create optional directories under cookbook_name as needed
+     > We need to create optional directories under cbook_name as needed
           |--templates
               |--default
           |--files
@@ -35,19 +35,20 @@ All the work will be done from workstation machine.
     vi /path/to/cookbook/recipes/default.rb
     
 3. Test the cookbook
-    knife cookbook test file_name (old, deprecated)
-    cookstyle test file_name
+    knife cookbook test cbook_name (old, deprecated)
+    cookstyle test cbook_name
     
 4. upload cookbook to server & check if it is uploaded.
-    knife cookbook upload file_name
+    knife cookbook upload cbook_name
     knife cookbook list
     
 5. update node run_list
-    knife node run_list add <node_name> file_name (or)
+    knife node run_list add <node_name> cbook_name (or)
     Edit the node runlist >> "knife node edit <node_name>" ,add the cookbook to the list
     
 6. Pull the changes from node
     sudo chef-client
+    > To avoid manual intervention, this command can be run through cron job on the nodes
     
     
-Default cookbooks path on node: /var/chef/cache/cookbooks/
+> Default cookbooks path on node: /var/chef/cache/cookbooks/
